@@ -37,6 +37,7 @@ img {
     object-fit: cover;
     overflow: hidden;
     border: solid 1px white;
+    width: 80%;
 }
 
 .carousel-desc {
