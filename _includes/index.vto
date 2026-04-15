@@ -1,0 +1,51 @@
+---
+layout: head.vto
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My first page</title>
+    <LINK href="/Style.css" rel="stylesheet">
+  </head>
+  <body>
+
+      <ul>
+        {{ for post of search.pages("type=projet", "année=desc") }}
+          <li>
+
+
+              {{ set photos = post.photos ?? (post.photo ? [post.photo] : []) }}
+
+              <div class="carousel" data-index="0">
+                {{ for i, src of photos }}
+                  <img
+                    src="{{ src }}"
+                    alt="{{ post.projet }}"
+                    class="carousel-img{{ if i === 0 }} active{{ /if }}"
+                    style="cursor: pointer;"
+                  />
+                {{ /for }}
+
+                <div class="carousel-desc">
+                  <p class="desc-titre">{{ post.projet }}</p>
+                  <p>{{ post.description }}</p>
+                  <p>{{ post.année }} — {{ post.lieu }}</p>
+                  <p>{{ post.auteurs }}</p>
+                </div>
+
+                {{ if photos.length > 1 }}
+                  <span class="carousel-counter">
+                    <span class="carousel-current">1</span>/{{ photos.length }}
+                  </span>
+                {{ /if }}
+              </div>
+          </li>
+        {{ /for }}
+      </ul>
+
+
+  </body>
+{{ content }}
+</html>
