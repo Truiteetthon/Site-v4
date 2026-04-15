@@ -4,6 +4,6 @@ description: Images de synthèse de la cafétéria d'une école de musique
 année: "2023"
 lieu: Québec
 photos:
-  - /images/55.jpg
-  - /images/54.jpg
+  - images/55.jpg
+  - images/54.jpg
 ---
