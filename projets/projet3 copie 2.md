@@ -1,12 +1,9 @@
 ---
-projet: Truite fatigué vraiment
-description: Un projet d'architecture dans les arbres
+projet: Mobilier thermique pour une école de musique
+description: Images de synthèse de la cafétéria d'une école de musique
 année: "2022"
-lieu: Montréal
-auteurs : unknown
-photos: 
-  - images/I1.jpg
-  - images/R1-04944-0013.jpg
-  - images/R1-04944-0014.jpg
-  - images/R1-04944-0015.jpg
+lieu: Québec
+photos:
+  - /images/55.jpg
+  - /images/54.jpg
 ---
