@@ -2,7 +2,7 @@ media:
   - name: images # Note: 'name' key is required here
     label: Images
     input: images
-    output: /images
+    output: images
 content:
   - name: projets
     label: Projets
