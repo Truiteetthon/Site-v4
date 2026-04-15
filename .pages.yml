@@ -21,52 +21,7 @@ content:
       - name: lieu
         label: Lieu
         type: string
-      - name: layout
-        label: layout
-        type: select
-        options:
-          values: [ layout.vto, layout2.vto ]
-      - name: sections
-        label: Page Sections
-        type: block
-        list: true # Often used with type: block to allow multiple sections
-        blockKey: type # Optional: customize the key used to store the block name, defaults to `_block`
-        blocks:
-          # Each item defines a possible block structure the user can select.
-          # These typically use 'component' or define 'fields' directly.
-          - name: text
-            label: Add Text Block
-            fields:
-              - name: content
-                label: Text Content
-                type: string
-              - name: photo
-                label: photo
-                type: image
-
-  - name: listes
-    label: listes
-    type: collection
-    path: listes/
-    fields:
-      - name: type_de_pratique
-        label: Type de pratique
-        type: string
-      - name: liens
-        label: pratiques
-        type: block
+      - name: photos
+        type: image
         list: true
-        blockKey: type
-        blocks:
-          - name: ajouter
-            label: nouvelle pratique
-            fields:
-              - name: pratique
-                label: nom de la pratique
-                type: string
-              - name: pays
-                label: origine
-                type: string
-              - name: liens
-                label: liens
-                type: string
+      
