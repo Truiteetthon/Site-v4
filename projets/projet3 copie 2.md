@@ -1,7 +1,7 @@
 ---
 projet: Mobilier thermique pour une école de musique
 description: Images de synthèse de la cafétéria d'une école de musique
-année: "2022"
+année: "2023"
 lieu: Québec
 photos:
   - /images/55.jpg
