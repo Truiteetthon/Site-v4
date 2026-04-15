@@ -31,13 +31,13 @@ li {
     align-items: center;
     padding-top: 20vh;
     padding-top: 20vh;
+    width: 80%;
 }
 
 img {
     object-fit: cover;
     overflow: hidden;
     border: solid 1px white;
-    width: 80%;
 }
 
 .carousel-desc {
