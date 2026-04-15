@@ -4,6 +4,13 @@ description: Bouillons de légume
 année: "2026"
 lieu: Bruxelles
 photos:
-  - images/C.jpg
-  - images/A.jpg
+  - images/Ç.png
+  - images/A.png
+  - images/C.png
+  - images/H.png
+  - images/A2.png
+  - images/U.png
+  - images/F2.png
+  - images/F.png
+  - images/E.png
 ---
