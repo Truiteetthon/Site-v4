@@ -3,10 +3,9 @@ projet: Truite fatigué vraiment
 description: Un projet d'architecture dans les arbres
 année: "2022"
 lieu: Montréal
-auteurs : unknown
-photos: 
-  - images/I1.jpg
-  - images/R1-04944-0013.jpg
-  - images/R1-04944-0014.jpg
-  - images/R1-04944-0015.jpg
+photos:
+  - images/32.jpg
+  - images/33.jpg
+  - images/35.jpg
+  - images/34.jpg
 ---
