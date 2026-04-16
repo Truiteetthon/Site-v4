@@ -26,16 +26,12 @@ header {
     left: 5px;
 }
 
-body {
-    width: calc(100vw-10vw);
-}
-
 ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 5vw;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 30vw);
     gap: 0px;
     padding: 0px;
 }
@@ -46,7 +42,6 @@ li {
     padding-top: 0;
     max-height: 45vh;
     overflow: visible;
-    width: 50%;
 }
 
 input {
@@ -80,6 +75,10 @@ p {
     padding: 12px;
     cursor: pointer;
     object-fit: cover;
+    background-color: lightgoldenrodyellow;
+    width: 300px;
+    height: 300px;
+    transform: translateX(50%);
 }
 
 .carousel-desc.active {
@@ -104,7 +103,7 @@ p {
 
 .carousel {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     width: 80%;
 }
 
@@ -121,7 +120,7 @@ p {
 
 .carousel-counter {
     bottom: 6px;
-    right: 8px;
+    right: 50%;
     font-size: 11px;
     color: rgba(0, 0, 0, 0.7);
 }
