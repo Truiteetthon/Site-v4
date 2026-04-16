@@ -34,3 +34,16 @@ function carouselNav(carousel) {
 document.querySelectorAll(".carousel").forEach((carousel) => {
   carousel.addEventListener("click", () => carouselNav(carousel));
 });
+
+document.querySelectorAll(".carousel").forEach((carousel) => {
+  const h = 35 + Math.floor(Math.random() * 30);
+  const w = 25 + Math.floor(Math.random() * 20);
+  carousel.style.height = `${h}vh`;
+  carousel.style.width = `${w}vw`;
+});
+document.querySelectorAll("li").forEach((li) => {
+  const x = Math.floor(Math.random() * 10);
+  const y = -5 + Math.floor(Math.random() * 30); // 0vh à 60vh
+  li.style.transform = `translateX(-${x}vw)`;
+  li.style.marginTop = `${y}vh`;
+});

@@ -7,38 +7,79 @@ html {
     background-size: cover;
 }
 a {
-    text-decoration: underline;
     color: black;
+    text-decoration: none;
+    background-color: white;
+    border: solid 1px black;
+    display: flex;
+    padding: 1px;
+    width: fit-content;
+}
+
+a:hover {
+    background-color: grey;
 }
 
 header {
     position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
+body {
+    width: calc(100vw-10vw);
 }
 
 ul {
     list-style-type: none;
-    -moz-column-count: 3;
-    -moz-column-gap: 20px;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 20px;
-    column-count: 3;
-    column-gap: 20px;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    padding: 0px;
 }
-
 li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20vh;
-    padding-top: 20vh;
+    padding-top: 0;
+    max-height: 45vh;
+    overflow: visible;
+    width: 50%;
+}
+
+input {
+    display: none;
+}
+
+label {
+    background-color: white;
+    border: solid 1px black;
+    display: flex;
+    padding: 1px;
+    width: fit-content;
+    margin-bottom: -12px;
+}
+
+label:hover {
+    background-color: grey;
+}
+
+p {
+    background-color: lightgrey;
+    border: solid 1px black;
+    display: flex;
+    padding: 1px;
+    width: fit-content;
+    margin-bottom: 2px;
 }
 
 .carousel-desc {
     display: none;
     padding: 12px;
     cursor: pointer;
-    height: 40vh;
-    border: solid 1px black;
+    object-fit: cover;
 }
 
 .carousel-desc.active {
@@ -70,16 +111,15 @@ li {
 .carousel-img {
     display: none;
     width: 100%;
+    max-height: 100%; /* suit la carte parent */
     object-fit: contain;
 }
 
 .carousel-img.active {
     display: block;
-    object-fit: contain;
 }
 
 .carousel-counter {
-    position: absolute;
     bottom: 6px;
     right: 8px;
     font-size: 11px;
