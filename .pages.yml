@@ -18,6 +18,9 @@ content:
       - name: année
         label: Année
         type: string
+      - name: type
+        label: type
+        type: string
       - name: lieu
         label: Lieu
         type: string
