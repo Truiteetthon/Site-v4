@@ -2,6 +2,9 @@
 projet: Rivière St-Charles
 description: Documentation du parc linéaire de la rivière Saint-Charles
 année: "2024"
+type:
+  - Photos
+  - Documentation
 lieu: Québec
 photos:
   - images/2.jpg
