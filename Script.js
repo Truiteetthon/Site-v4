@@ -109,3 +109,75 @@ function carouselNav(carousel) {
   const counter = carousel.querySelector(".carousel-current");
   if (counter) counter.textContent = index + 1;
 }
+
+const ul = document.querySelector("ul");
+const lis = [...ul.querySelectorAll("li")];
+lis.sort(() => Math.random() - 0.5);
+lis.forEach((li) => ul.appendChild(li));
+
+// Filtres
+document.querySelectorAll('input[name="fav_language"]').forEach((radio) => {
+  radio.addEventListener("change", applyFilters);
+});
+document.querySelectorAll('input[name="year"]').forEach((radio) => {
+  radio.addEventListener("change", applyFilters);
+});
+
+function applyFilters() {
+  const activeType = document.querySelector(
+    'input[name="fav_language"]:checked',
+  )?.value;
+  const activeYear = document.querySelector(
+    'input[name="year"]:checked',
+  )?.value;
+
+  document.querySelectorAll("li").forEach((li) => {
+    const matchType = !activeType || li.dataset.type === activeType;
+    const matchYear = !activeYear || li.dataset.year === activeYear;
+    li.style.display = matchType && matchYear ? "flex" : "none";
+  });
+}
+
+function applyFilters() {
+  const activeType = document.querySelector(
+    'input[name="fav_language"]:checked',
+  )?.value;
+  const activeYear = document.querySelector(
+    'input[name="year"]:checked',
+  )?.value;
+
+  document.querySelectorAll("li").forEach((li) => {
+    const matchType = !activeType || li.dataset.type === activeType;
+    const matchYear = !activeYear || li.dataset.year === activeYear;
+    li.style.display = matchType && matchYear ? "flex" : "none";
+  });
+
+  // Mettre le label actif en gris
+  document.querySelectorAll("label").forEach((label) => {
+    label.style.backgroundColor = "white";
+  });
+  if (activeType) {
+    document.querySelector(`label[for="${activeType}"]`).style.backgroundColor =
+      "grey";
+  }
+  if (activeYear) {
+    document.querySelector(`label[for="${activeYear}"]`).style.backgroundColor =
+      "grey";
+  }
+}
+document
+  .querySelectorAll('input[name="fav_language"], input[name="year"]')
+  .forEach((radio) => {
+    radio.addEventListener("click", function () {
+      if (this.dataset.checked === "true") {
+        this.checked = false;
+        this.dataset.checked = "false";
+        applyFilters();
+      } else {
+        document
+          .querySelectorAll(`input[name="${this.name}"]`)
+          .forEach((r) => (r.dataset.checked = "false"));
+        this.dataset.checked = "true";
+      }
+    });
+  });
