@@ -2,6 +2,9 @@
 projet: Ça chauffe
 description: Bouillons de légume
 année: "2026"
+type:
+  - Numérisation
+  - Nourriture
 lieu: Bruxelles
 photos:
   - images/Ç.png
