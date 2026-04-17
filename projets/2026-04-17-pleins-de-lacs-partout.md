@@ -2,6 +2,9 @@
 projet: Pleins de lacs partout
 description: Cahiers d'archivage passé présent futur
 année: "2025"
+type:
+  - Architecture
+  - Numérisation
 lieu: Bruxelles
 photos:
   - images/1.png
