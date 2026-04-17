@@ -2,6 +2,9 @@
 projet: "Le langage de l'érosion "
 description: Plan Élévation Axonométrie
 année: "2024"
+type:
+  - Architecture
+  - Dessins
 lieu: Métis sur mer
 photos:
   - images/32.jpg
