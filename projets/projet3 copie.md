@@ -1,8 +1,10 @@
 ---
-projet: Truite fatigué vraiment
-description: Un projet d'architecture dans les arbres
-année: "2022"
-lieu: Montréal
+projet: Jean Marie Roy
+description: Documentation d'un projet de Jean Marie Roy
+année: "2023"
+type:
+  - Photos
+lieu: Québec
 photos:
   - images/25.jpg
   - images/26.jpg
