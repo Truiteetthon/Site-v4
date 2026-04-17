@@ -14,4 +14,12 @@ photos:
   - images/9.png
   - images/10.png
   - images/11.png
+  - images/12.png
+  - images/13.png
+  - images/14.png
+  - images/15.png
+  - images/16.png
+  - images/19.png
+  - images/20.png
+  - images/21.png
 ---
