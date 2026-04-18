@@ -10,4 +10,6 @@ site.add("images");
 
 site.add("projets");
 
+site.add("fonts");
+
 export default site;
