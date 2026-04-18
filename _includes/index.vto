@@ -12,8 +12,8 @@ layout: head.vto
   <body>
 
       <ul>
-          {{ for post of search.pages("type=projet", "année=desc") }}
-            <li data-type="{{ post.type }}" data-year="{{ post.année }}">
+          {{ for post of search.pages("tag=projet", "année=desc") }}
+          <li data-type="{{ post.type |> join(',') }}" data-year="{{ post.année }}" data-lieu="{{ post.lieu }}">
 
 
               {{ set photos = post.photos ?? (post.photo ? [post.photo] : []) }}
